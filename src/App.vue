@@ -1,29 +1,34 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppFooter from './components/AppFooter.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppContent from './components/AppContent.vue';
 
 export default {
-  components : {
-    HelloWorld,
+  components: {
+    AppFooter,
+    AppHeader,
+    AppContent
   },
 
-  data () {
+  data() {
     return {
-      prova: 'ciao a tutti'
+      // placeholder
     }
   },
-    methods:{
-      // placeholder
-    },
+  methods: {
+    // placeholder
+  },
 
-    mounted () {
-      // placehyolder
-    }
+  mounted() {
+    // placehyolder
+  }
 }
 
 </script>
 
 
 <template>
-  <div>vite dice {{prova}}!</div>
-  <HelloWorld/>
+  <AppHeader />
+  <AppContent />
+  <AppFooter />
 </template>
