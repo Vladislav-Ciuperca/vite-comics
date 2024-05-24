@@ -31,4 +31,5 @@ export default {
   <AppHeader />
   <AppContent />
   <AppFooter />
+  <!-- commento di prova per sospetto bug di git -->
 </template>
