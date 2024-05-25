@@ -19,7 +19,7 @@ export default {
     <div class="mine-bg-blue">
         <div class="container-lg">
             <div class="row d-flex p-4">
-                <div class="col-12 d-flex align-items-center justify-content-between">
+                <div class="col-12 d-flex align-items-center justify-content-around">
 
                     <a href="">
                         <img src="../assets/img/buy-comics-digital-comics.png" alt="#">
