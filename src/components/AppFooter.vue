@@ -1,5 +1,14 @@
 <script>
+import FooterUp from 'FooterUp.vue';
+import FooterMid from 'FooterMid.vue';
+import FooteDown from 'FooterDown.vue';
+
 export default {
+  components: {
+    FooterUp,
+    FooterMid,
+    FooteDown,
+  },
   data() {
     return {
       messaggino: 'sonon il figlio'
@@ -16,5 +25,7 @@ export default {
 </script>
 
 <template>
-  <div>qui footer</div>
+  <FooterUp />
+  <FooterMid />
+  <FooterDown />
 </template>

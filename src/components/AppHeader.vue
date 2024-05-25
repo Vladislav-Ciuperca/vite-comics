@@ -9,39 +9,39 @@ export default {
                 },
                 {
                     nome: " COMICS",
-                    url: "#characters"
+                    url: "#comics"
                 },
                 {
                     nome: "MOVIES",
-                    url: "#characters"
+                    url: "#movies"
                 },
                 {
                     nome: "TV",
-                    url: "#characters"
+                    url: "#tv"
                 },
                 {
                     nome: "GAMES",
-                    url: "#characters"
+                    url: "#games"
                 },
                 {
                     nome: "COLLECTABLES",
-                    url: "#characters"
+                    url: "#collectables"
                 },
                 {
                     nome: "VIDEOS",
-                    url: "#characters"
+                    url: "#videos"
                 },
                 {
                     nome: "FANS",
-                    url: "#characters"
+                    url: "#fans"
                 },
                 {
                     nome: "NEWS",
-                    url: "#characters"
+                    url: "#news"
                 },
                 {
                     nome: "SHOP",
-                    url: "#characters"
+                    url: "#shop"
                 },
 
             ]
@@ -64,7 +64,7 @@ export default {
                 <header class="d-flex justify-content-between align-items-center">
                     <img src="../assets/img/dc-logo.png" alt="">
                     <div class="header-dx d-flex">
-                        <a class="flex-end" v-for="link in hedaerLinks" href="">{{ link.nome }}</a>
+                        <a class="flex-end" v-for="link in hedaerLinks" :href="link.url">{{ link.nome }}</a>
                     </div>
                 </header>
             </div>
