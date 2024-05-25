@@ -64,7 +64,9 @@ export default {
             <div class="sx d-flex ">
                 <div class=" debug">
                     <ul v-for="elemento in contenutoFooter[0]">DC COMICS
-                        <li v-for="vocie in elemento">{{ vocie }}</li>
+                        <a href="">
+                            <li v-for="vocie in elemento">{{ vocie }}</li>
+                        </a>
                     </ul>
                     <ul v-for="elemento in contenutoFooter[1]">SHOP
                         <li v-for="vocie in elemento">{{ vocie }}</li>
@@ -118,6 +120,7 @@ li {
     font-size: 15px;
     color: #999;
     list-style-type: none;
+    text-decoration: none;
 }
 
 .dx {
@@ -133,5 +136,14 @@ img {
     bottom: -100px;
     left: 0px;
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    color: aliceblue;
+    cursor: pointer;
 }
 </style>
