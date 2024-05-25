@@ -16,5 +16,5 @@ export default {
 </script>
 
 <template>
-    <div>qui footer</div>
+    <div>qui footer mid</div>
 </template>

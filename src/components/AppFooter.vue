@@ -1,13 +1,13 @@
 <script>
-import FooterUp from 'FooterUp.vue';
-import FooterMid from 'FooterMid.vue';
-import FooteDown from 'FooterDown.vue';
+import FooterUp from './FooterUp.vue';
+import FooterMid from './FooterMid.vue';
+import FooterDown from './FooterDown.vue';
 
 export default {
   components: {
     FooterUp,
     FooterMid,
-    FooteDown,
+    FooterDown,
   },
   data() {
     return {
