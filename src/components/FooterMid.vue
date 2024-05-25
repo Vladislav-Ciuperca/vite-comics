@@ -8,6 +8,7 @@ export default {
                         'Characters',
                         'Comics',
                         'Movies',
+                        'TV',
                         'Games',
                         'Videos',
                         'News',
@@ -59,6 +60,7 @@ export default {
 <template>
     <div class="footer-bg-container ">
         <div class="container-lg d-flex justify-content-between">
+            <!-- parte sinistra -->
             <div class="sx d-flex ">
                 <div class=" debug">
                     <ul v-for="elemento in contenutoFooter[0]">DC COMICS
@@ -69,15 +71,17 @@ export default {
                     </ul>
                 </div>
                 <div class=" debug">
-                    placeholder
-                    <!-- <ul v-for="elemento in contenutoFooter[2]">DC COMICS
+                    <ul v-for="elemento in contenutoFooter[2]">DC
                         <li v-for="vocie in elemento">{{ vocie }}</li>
-                    </ul> -->
+                    </ul>
                 </div>
                 <div class=" debug">
-                    <div>palcefwsd</div>
+                    <ul v-for="elemento in contenutoFooter[3]">SITES
+                        <li v-for="vocie in elemento">{{ vocie }}</li>
+                    </ul>
                 </div>
             </div>
+            <!-- destra logo  -->
             <div class="dx">
                 <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
@@ -89,24 +93,28 @@ export default {
 <style scoped>
 .footer-bg-container {
     background-image: url(../assets/img/footer-bg.jpg);
-    height: 28rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
 }
 
 .debug {
-    border: 2px dashed green;
+    /* border: 2px dashed green; */
     margin-top: 2rem;
     height: 23rem;
     text-wrap: nowrap;
+    margin-right: 1.5rem;
 }
 
 ul {
     padding: 0;
+    padding-bottom: 9px;
     font-weight: 500;
     font-size: 20px;
 }
 
 li {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
     color: #999;
     list-style-type: none;
@@ -115,14 +123,14 @@ li {
 .dx {
     overflow: hidden;
     position: relative;
-    height: 28rem;
-    width: 40rem;
+    height: 25rem;
+    width: 38rem;
 }
 
 img {
     position: absolute;
     float: right;
-    bottom: -85px;
+    bottom: -100px;
     left: 0px;
     width: 100%;
 }

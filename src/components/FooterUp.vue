@@ -18,12 +18,12 @@ export default {
 <template>
     <div class="mine-bg-blue">
         <div class="container-lg">
-            <div class="row d-flex p-4">
+            <div class="row d-flex p-5">
                 <div class="col-12 d-flex align-items-center justify-content-around">
 
                     <a href="">
                         <img src="../assets/img/buy-comics-digital-comics.png" alt="#">
-                        <span>DIGITAL</span>
+                        <span>DIGITAL COMICS</span>
                     </a>
                     <a href="">
                         <img src="../assets/img/buy-comics-merchandise.png" alt="#">
